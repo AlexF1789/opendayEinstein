@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+    <head>
+        <title>DeCryptor - JS</title>
+        <meta name="author" content="Alessandro Flora">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <script type="text/javascript">
+        function cripta() {
+            testoRaw = document.getElementById("testoRaw").value;
+            document.getElementById("testoCifrato").value = CryptoJS.MD5(testoRaw);
+        }
+    </script>
+    <!-- IMPLEMENTAZIONE DI CRYPTO-JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+
+    <body>
+        <header>
+            <h1>DeCryptor</h1><a>versione JavaScript</a>
+        </header>
+        
+        <section>
+            <article>
+                <p>Inserendo un testo nella seguente casella di testo e premendo Cripta sarà possibile generare l'hash della stringa attraverso una funzione JavaScript (eseguita localmente nel browser).</p>
+            
+                <input type="text" placeholder="Testo da cifrare" id="testoRaw" autocomplete="off"><br><br>
+                <input type="text" placeholder="Testo cifrato" id="testoCifrato" readonly="readonly" disabled="disabled"><br><br>
+                <button onclick="cripta()">Cripta</button>
+            </article>
+        </section>
+
+        <footer>
+            <p>copyleft 2024 - Alessandro Flora</p>
+            <p>Rilasciato sotto la licenza GNU GPL v3</p>
+        </footer>
+
+    </body>
+</html>

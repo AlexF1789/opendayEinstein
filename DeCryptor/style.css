@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: lightblue;
+    padding: 0.25%;
+    padding-left: 3%;
+}
+
+h1 {
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    font-size: 3vW;
+}
+
+header > a {
+    font-size: 1.5vW;
+    margin-left: 1%;
+    color: white;
+    font-weight: bold;
+}
+
+h1:hover {
+    color: grey;
+}
+
+header > a:hover {
+    color: yellow;
+}
+
+p {
+    color: darkgrey;
+}
+
+section {
+    margin: 5%;
+    text-align: center;
+}
+
+button {
+	background-color: lightblue;
+	color: white;
+	font-weight: bold;
+	font-size: 100%;
+	border: 0;
+	padding: 15px;
+	border-radius: 0.25em;
+}
+
+button:hover {
+	color: lightgrey;
+	cursor: pointer;
+	background-color: #328ba8;
+	transition: 0.25s;
+}
+
+#testoRaw, #testoCifrato {
+    color: lightgrey;
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid lightgrey;
+    padding-bottom: 5px;
+    width: 50%;
+}
+
+#testoRaw:focus, #testoCifrato:focus {
+    border-bottom: 2px solid lightblue;
+    transition: 0.25s;
+    color: grey;
+}
+
+footer {
+    background-color: darkgray;
+    text-align: center;
+    padding: 6vW;
+}
+
+footer p {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-size: 1vW;
+}
